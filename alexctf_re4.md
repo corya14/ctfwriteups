@@ -3,4 +3,5 @@ If I tell you what version of python I used .. where is the fun in that?
 
 ## Creds
 Max ([@mfresonke](https://github.com/mfresonke))
+
 [Mysterie/uncompyle2](https://github.com/Mysterie/uncompyle2)
