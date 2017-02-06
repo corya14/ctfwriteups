@@ -103,5 +103,7 @@ _G&mo<c|_DXXE ever if DUO↔Icz bo e[WG↔Recure, LeD↔gX☻mmo|<ih▲^\H☺ag
 Using `ALEXCTF{xxxxxxxxxxxxxxxxx}` as a base, a SIT team member **Spencer** pointed out that we could XOR the desired result letter (e.g. `e` in `Friends`) with the original cipher text character to determine the key character. I made the python function in his honor:
 ```python
 def spencer(a,b):
+	# a: Desired ptxt letter
+	# b: Incorrect ptxt letter
 	return asciixor(asciixor(b,'x'),a)
 ```
