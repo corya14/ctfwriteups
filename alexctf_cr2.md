@@ -1,6 +1,9 @@
 # [CR2: Many Time Secrets](https://ctf.oddcoder.com/challenges#CR2: Many time secrets)
 I learned about one-time pads (OTP) in my intro to cyber security class. However, the hint provided made it clear that the cipher was repeating the OTP.
 
+## Creds
+Spencer (What's yo github bruhh?)
+
 ## Approach 1
 My initial approach was to xor the cipher with itself at an offset. At the right offset, this would cancel out the key and provide two plaintexts xor'd with eachother. I began creating some python functions to aid with this strategy.
 ```python
