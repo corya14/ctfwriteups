@@ -10,3 +10,10 @@ This was my first CTF! I heard about it from the UF Student InfoSec Team and wan
 3. Forensics (Fore)
 4.  Scripting (SC)
 5.  Trivia (TR)
+
+### Solves/Assists
+1. CR2
+2. CR3
+3. TR4 
+4. RE4
+5. CR4
