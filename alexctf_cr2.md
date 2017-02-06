@@ -2,7 +2,7 @@
 I learned about one-time pads (OTP) in my intro to cyber security class. However, the hint provided made it clear that the cipher was repeating the OTP.
 
 ## Approach 1
-My initial approach was to xor the cipher with itself at an offset. At the right offset, this would cancel out the key and provide two plaintexts xor'd with eachother. I began creating some python functions to aid with this strategy:
+My initial approach was to xor the cipher with itself at an offset. At the right offset, this would cancel out the key and provide two plaintexts xor'd with eachother. I began creating some python functions to aid with this strategy.
 ```python
 def hex2bin(txt):
 	hextxt = ""
@@ -87,4 +87,21 @@ As I was developing the python functions, another SIT member found a site ([XOR 
 | 29 | 5.3% |
 | 34 | 4.6% |
 
-Also of note, the site guessed keys similar to __{KEE__. Since flags are in the format _ALEXCTF{A-Za-z0-9`_*}_, we decided to guess the key as the flag.
+Also of note, the site guessed keys similar to `_{KEE_`. Since flags are in the format `ALEXCTF{A-Za-z0-9_*}`, we decided to guess the key as the flag.
+
+### First Guess
+Due to the estimated key length of 13, we guessed `ALEXCTF{xxxx}` as the key. XORing the plaintext with this key repeated yielded the following result text:
+>```
+Dear FriUSN◄☻Rkix<tgSB‼t☺understooT↔GD☻kjs}kk▲F]Y☺used One DTGX☻vbd+ynmL^CIHon scheme∟↔c↔Jcbro<tf_S‼TU is the o^QS↔Gh`rrltgQI‼PDthod that►TY↔OgwhnqazWDRQMy proven DR
+_G&mo<c|_DXXE ever if DUO↔Icz bo e[WG↔Recure, LeD↔gX☻mmo|<ih▲^\H☺agree witX↔GX☻rl ~oe.JOZ☺encryptio^↔Y^Jcne+}ly_^@‼
+```
+
+### Key Length Actually 26
+`Dear Fri` is 8 correct characters. Since the correct characters repeat every 26 characters, we knew the key was 26 characters long.
+
+### Solving
+Using `ALEXCTF{xxxxxxxxxxxxxxxxx}` as a base, a SIT team member **Spencer** pointed out that we could XOR the desired result letter (e.g. `e` in `Friends`) with the original cipher text character to determine the key character. I made the python function in his honor:
+```python
+def spencer(a,b):
+	return asciixor(asciixor(b,'x'),a)
+```
