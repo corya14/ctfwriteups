@@ -1,4 +1,6 @@
 # [CR2: Many Time Secrets](https://ctf.oddcoder.com/challenges#CR2: Many time secrets)
+>This time Fady learned from his old mistake and decided to use onetime pad as his encryption technique, but he never knew why people call it one time pad!
+
 I learned about one-time pads (OTP) in my intro to cyber security class. However, the hint provided made it clear that the cipher was repeating the OTP.
 
 ## Creds
