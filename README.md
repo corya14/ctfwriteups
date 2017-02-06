@@ -2,7 +2,7 @@
 
 ## [AlexCTF](https://ctftime.org/event/408)
 ### Overview
-This was my first CTF! I heard about it from the UF Student InfoSec Team and wanted to check it out. Out of the 1029 teams with a score, UF's team, _Kernel Sanders_ placed **71st**.
+This was my first CTF! I heard about it from the UF Student InfoSec Team and wanted to check it out. Out of the 1029 teams with a score, UF's team, _Kernel Sanders_ placed **71st** with a total of **1940** points.
 
 ### [Categories](https://ctftime.org/event/408/tasks/)
 1. Reverse Engineering (RE)
