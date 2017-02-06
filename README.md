@@ -17,3 +17,7 @@ This was my first CTF! I heard about it from the UF Student InfoSec Team and wan
 3. [TR4](https://ctf.oddcoder.com/challenges#TR4: Doesn't our logo look cool ?)(40)
 4. [RE4](https://ctf.oddcoder.com/challenges#RE4: unVM me)(250)
 5. [CR4](https://ctf.oddcoder.com/challenges#CR4: Poor RSA)(200)
+
+### Writeups
+1. [CR2](https://github.com/corya14/ctfwriteups/blob/master/alexctf_cr2.md)
+2. [RE4](https://github.com/corya14/ctfwriteups/blob/master/alexctf_re4.md)
