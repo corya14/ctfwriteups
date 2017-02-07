@@ -21,4 +21,4 @@ This was my first CTF! I heard about it from the UF Student InfoSec Team and wan
 ### Writeups
 1. [CR2](https://github.com/corya14/ctfwriteups/blob/master/alexctf_cr2.md)
 2. [RE4](https://github.com/corya14/ctfwriteups/blob/master/alexctf_re4.md)
-3. CR4
+3. [CR4](https://github.com/corya14/ctfwriteups/blob/master/alexctf_cr4.md)
