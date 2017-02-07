@@ -12,11 +12,14 @@ This was my first CTF! I heard about it from the UF Student InfoSec Team and wan
 5.  Trivia (TR)
 
 ### Solves/Assists
-1. [CR2](https://ctf.oddcoder.com/challenges#CR2: Many time secrets)(100)
-2. [CR3](https://ctf.oddcoder.com/challenges#CR3: What is this encryption?)(150)
-3. [TR4](https://ctf.oddcoder.com/challenges#TR4: Doesn't our logo look cool ?)(40)
-4. [RE4](https://ctf.oddcoder.com/challenges#RE4: unVM me)(250)
-5. [CR4](https://ctf.oddcoder.com/challenges#CR4: Poor RSA)(200)
+| Task | Tags | Solve/Assist | Points |
+| --- | --- | --- | --- |
+| [CR2: Many time secrets](https://ctf.oddcoder.com/challenges#CR2: Many time secrets) | cryptography-rsa | Solve\* | 100 |
+| [CR3: What is this encryption?](https://ctf.oddcoder.com/challenges#CR3: What is this encryption?) | cryptography-rsa | Assist | 150 |
+| [TR4: Doesn't our logo look cool?](https://ctf.oddcoder.com/challenges#TR4: Doesn't our logo look cool ?) | trivia | Solve | 40 |
+| [RE4: unVM me](https://ctf.oddcoder.com/challenges#RE4: unVM me) | 	engineering, reverse | Solve\* | 250 |
+| [CR4: Poor RSA](https://ctf.oddcoder.com/challenges#CR4: Poor RSA) | cryptography-rsa | Solve\* | 200 |
+\* Can't take all the credit myself. Significant help from team members and friends!
 
 ### Writeups
 1. [CR2](https://github.com/corya14/ctfwriteups/blob/master/alexctf_cr2.md)
