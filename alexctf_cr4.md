@@ -1,4 +1,4 @@
-# [CR2: Poor RSA](https://ctf.oddcoder.com/challenges#CR4: Poor RSA)
+# [CR4: Poor RSA](https://ctf.oddcoder.com/challenges#CR4: Poor RSA)
 > This time Fady decided to go for modern cryptography implementations, He is fascinated with choosing his own prime numbers, so he picked up RSA once more. Yet he was unlucky again!
 
 We were given an RSA public key:
