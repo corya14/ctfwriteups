@@ -127,7 +127,7 @@ if __name__ == '__main__':
 ```
 
 ## Approach 4: Desperation
-I can't believe I didn't try this first, but I google'd parts of the problem. Maybe Fady chose a popular prime number? Who knows! Well anyways after a search of the hex modulus I found a [pastebin](http://pastebin.com/NmX7d271) posted by a mysterious _balbla_ with p and q:
+I can't believe I didn't try this first, but I Google'd parts of the problem. Maybe Fady chose a popular prime number? Who knows! Well anyways after a search of the hex modulus I found a [pastebin](http://pastebin.com/NmX7d271) posted by a mysterious _balbla_ with p and q:
 ```
 #!/usr/bin/python2
 import gmpy2
@@ -150,7 +150,7 @@ m = pow(c,d,n)
 print "Solved ! m = %d" % m
 ```
 
-I gave p and q to the SIT team slack and Chris ran [rsatool.py](https://github.com/ius/rsatool) and used openssl rsautl to obtain the flag:
+I gave _p_ and _q_ to the SIT team slack and Chris ran [rsatool.py](https://github.com/ius/rsatool) and used _openssl rsautl_ to obtain the flag:
 ```
 ./rsatool.py -f PEM -o key.pem -p863653476616376575308866344984576466644942572246900013156919 -q965445304326998194798282228842484732438457170595999523426901
 cat flag.b64 | base64 -d > flag.bytes
