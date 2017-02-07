@@ -53,6 +53,22 @@ print 'Congratz now you have the flag'
 The decompiled python code reveals the flag as 13 MD5 hashes of 5 characters.
 
 ## MD5 is Broken
-Next was just a matter of reversing the hashes to get the flag. I Googled a few sites but fell victim to an odd inversely proportional relationship between the site's MD5 database and their SEO... No matter, I'll just brute force it! My friend, Max, wrote a hash brute forcing program in GO that was embarassingly faster than my python script. Fortunately he has a social life and a hot girlfriend so he had to leave before he could obtain the flag before me (:P).
+Next was just a matter of reversing the hashes to get the flag. 
+```
+831daa3c843ba8b087c895f0ed305ce7
+6722f7a07246c6af20662b855846c2c8
+5f04850fec81a27ab5fc98befa4eb40c
+ecf8dcac7503e63a6a3667c5fb94f610
+c0fd15ae2c3931bc1e140523ae934722
+569f606fd6da5d612f10cfb95c0bde6d
+068cb5a1cf54c078bf0e7e89584c1a4e
+c11e2cd82d1f9fbd7e4d6ee9581ff3bd
+1df4c637d625313720f45706a48ff20f
+3122ef3a001aaecdb8dd9d843c029e06
+adb778a0f729293e7e0b19b96a4c5a61
+938c747c6a051b3e163eb802a325148e
+38543c5e820dd9403b57beff6020596d
+```
+I Googled a few sites but fell victim to an odd inversely proportional relationship between the site's MD5 database and their SEO... No matter, I'll just brute force it! My friend, Max, wrote a hash brute forcing program in GO that was embarassingly faster than my python script. Unfortunately he had to leave before he could obtain the flag.
 
 The python script checked all combos of `A-Za-z0-9*_{}` and took about an hour (66^5 iterations run on my tiny Lenovo Yoga). However, about 10 minutes before it finished, a SIT member found a site with all the hashes (http://www.md5online.org/).
