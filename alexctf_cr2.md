@@ -17,7 +17,6 @@ We were given a secret message to decode:
 263e203d63232f0f20653f207f332065262c3168313722367918
 2f2f372133202f142665212637222220733e383f2426386b
 ```
-The message is divisible by two, so we guessed that the decoded message should be representable as ASCII characters.
 
 ## Creds
 Spencer (What's yo github bruhh?)
