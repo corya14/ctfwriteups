@@ -3,11 +3,27 @@
 
 I learned about one-time pads (OTP) in my intro to cyber security class. However, the hint provided made it clear that the cipher was repeating the OTP.
 
+We were given a secret message to decode:
+```
+0529242a631234122d2b36697f13272c207f2021283a6b0c7908
+2f28202a302029142c653f3c7f2a2636273e3f2d653e25217908
+322921780c3a235b3c2c3f207f372e21733a3a2b37263b313012
+2f6c363b2b312b1e64651b6537222e37377f2020242b6b2c2d5d
+283f652c2b31661426292b653a292c372a2f20212a316b283c09
+29232178373c270f682c216532263b2d3632353c2c3c2a293504
+613c37373531285b3c2a72273a67212a277f373a243c20203d5d
+243a202a633d205b3c2d3765342236653a2c7423202f3f652a18
+2239373d6f740a1e3c651f207f2c212a247f3d2e65262430791c
+263e203d63232f0f20653f207f332065262c3168313722367918
+2f2f372133202f142665212637222220733e383f2426386b
+```
+The message is divisible by two, so we guessed that the decoded message should be representable as ASCII characters.
+
 ## Creds
 Spencer (What's yo github bruhh?)
 
 ## Initial Approach
-My initial approach was to xor the cipher with itself at an offset. At the right offset, this would cancel out the key and provide two plaintexts xor'd with eachother. I began creating some python functions to aid with this strategy.
+My initial approach was to xor the cipher with itself at an offset. At the right offset, this would cancel out the key and provide two different plaintexts of the message XOR'd with eachother. With this result, XORing common words may end up cancelling out one of the parts of the message and leave us with plaintext. I began creating some python functions to aid with this strategy.
 ```python
 def hex2bin(txt):
 	hextxt = ""
@@ -100,6 +116,8 @@ Due to the estimated key length of 13, we guessed `ALEXCTF{xxxx}` as the key. XO
 Dear FriUSN◄☻Rkix<tgSB‼t☺understooT↔GD☻kjs}kk▲F]Y☺used One DTGX☻vbd+ynmL^CIHon scheme∟↔c↔Jcbro<tf_S‼TU is the o^QS↔Gh`rrltgQI‼PDthod that►TY↔OgwhnqazWDRQMy proven DR
 _G&mo<c|_DXXE ever if DUO↔Icz bo e[WG↔Recure, LeD↔gX☻mmo|<ih▲^\H☺agree witX↔GX☻rl ~oe.JOZ☺encryptio^↔Y^Jcne+}ly_^@‼
 ```
+
+**Bingo!** No need to continue with the initial approach. At this point, we could use the partially decoded words to figure out the rest of the key.
 
 ### Key Length Actually 26
 `Dear Fri` is 8 correct characters. Since the correct characters repeat every 26 characters, we knew the key was 26 characters long.
