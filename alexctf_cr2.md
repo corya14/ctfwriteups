@@ -6,7 +6,7 @@ I learned about one-time pads (OTP) in my intro to cyber security class. However
 ## Creds
 Spencer (What's yo github bruhh?)
 
-## Approach 1
+## Initial Approach
 My initial approach was to xor the cipher with itself at an offset. At the right offset, this would cancel out the key and provide two plaintexts xor'd with eachother. I began creating some python functions to aid with this strategy.
 ```python
 def hex2bin(txt):
@@ -76,7 +76,7 @@ def asciixor(a,b):
 	return hex2ascii(ans)
 ```
 
-## Approach 2
+## Lucky Guess
 As I was developing the python functions, another SIT member found a site ([XOR Cracker](https://wiremask.eu/tools/xor-cracker/)) that guessed the most probable key length as 13
 
 | Key Length | Probability |
