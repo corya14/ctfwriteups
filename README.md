@@ -19,6 +19,7 @@ This was my first CTF! I heard about it from the UF Student InfoSec Team and wan
 | TR4: Doesn't our logo look cool? | trivia | Solve | 40 |
 | RE4: unVM me | 	engineering, reverse | Solve\* | 250 |
 | CR4: Poor RSA | cryptography-rsa | Assist | 200 |
+
 \* Can't take all the credit myself. Received help from team members and friends!
 
 ### Writeups
