@@ -14,11 +14,11 @@ This was my first CTF! I heard about it from the UF Student InfoSec Team and wan
 ### Solves/Assists
 | Task | Tags | Solve/Assist | Points |
 | --- | --- | --- | --- |
-| [CR2: Many time secrets](https://ctf.oddcoder.com/challenges#CR2: Many time secrets) | cryptography-rsa | Solve\* | 100 |
-| [CR3: What is this encryption?](https://ctf.oddcoder.com/challenges#CR3: What is this encryption?) | cryptography-rsa | Assist | 150 |
-| [TR4: Doesn't our logo look cool?](https://ctf.oddcoder.com/challenges#TR4: Doesn't our logo look cool ?) | trivia | Solve | 40 |
-| [RE4: unVM me](https://ctf.oddcoder.com/challenges#RE4: unVM me) | 	engineering, reverse | Solve\* | 250 |
-| [CR4: Poor RSA](https://ctf.oddcoder.com/challenges#CR4: Poor RSA) | cryptography-rsa | Assist | 200 |
+| CR2: Many time secrets | cryptography-rsa | Solve\* | 100 |
+| CR3: What is this encryption? | cryptography-rsa | Assist | 150 |
+| TR4: Doesn't our logo look cool? | trivia | Solve | 40 |
+| RE4: unVM me | 	engineering, reverse | Solve\* | 250 |
+| CR4: Poor RSA | cryptography-rsa | Assist | 200 |
 \* Can't take all the credit myself. Received help from team members and friends!
 
 ### Writeups
