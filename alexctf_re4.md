@@ -1,4 +1,4 @@
-# [RE4: UnVM Me](https://ctf.oddcoder.com/challenges#RE4: unVM me)
+# RE4: UnVM Me
 >If I tell you what version of python I used .. where is the fun in that?
 
 We were given a .pyc file to reverse engineer. Obtaining the code was easy, but they threw in MD5 hashes to add an extra challenge.
